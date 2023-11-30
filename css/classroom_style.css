@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+#wrapper{
+  margin: 0 285px;
+}
+/* Gaya CSS untuk opsi hari dan waktu */
+#hari-waktu {
+    width: 100%;
+    margin-top: 120px;
+    justify-content: space-evenly;
+    display: flex;
+
+    gap: 1vw;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#hari-waktu > div {
+    flex: 1; /* Menggunakan flex untuk mengisi 100% lebar layar */
+}
+
+#hari-waktu select{
+    width: 100%;
+    background-color: #004267;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 1vw;
+    font-size: 16px;
+}
+
+#pilihanLantai{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* Gaya CSS untuk opsi lantai */
+.pilihan-lantai {
+    border: 1px solid #004267;
+    border-radius: 8px;
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    color: #004267;
+    text-align: center; /* Tambahkan properti ini */
+}
+
+.pilihan-lantai:hover {
+    background-color: #004267;
+    color: white;
+}
+
+/* Gaya untuk opsi lantai yang terpilih */
+.terpilih {
+    background-color: #004267;
+    color: white;
+}
+
+/* Gaya CSS untuk opsi kapasitas */
+#kapasitas {
+    width: 100%;
+    display: inline-block; /* Tambahkan properti ini */
+    border: 1px solid #004267;
+    padding: 10px;
+    border-radius: 8px;
+
+    background-color: transparent;
+    color: #004267;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Gaya CSS untuk heading "Daftar Kelas yang Belum Terisi" */
+h2 {
+    font-size: 24px;
+    color: #004267;
+    margin-top: 20px;
+
+}
+
+/* Gaya CSS untuk daftar kelas yang tersedia */
+#kelas-terisi {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.kelas-item {
+    border: 2px solid #004267;
+    border-radius: 8px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    background-color: #004267;
+    color: white;
+    width: 100%;
+    justify-content: center;
+}
+
+.kelas-item:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+    #wrapper {
+      margin: 0 70px; /* Sesuaikan margin sesuai kebutuhan Anda */
+    }
+
+    #hari-waktu {
+        margin-top: 120px; 
+        justify-content: space-evenly;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .kelas-item:last-child {
+        margin-bottom: 0;
+    }
+} 
+
+@media (max-width: 768px) {
+    #wrapper {
+        margin: 0 60px; /* Sesuaikan margin sesuai kebutuhan Anda */
+    }
+
+    #hari-waktu {
+        margin-top: 80px;
+    }
+}
